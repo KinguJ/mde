@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import { APP_NAME, PHONE, WHATSAPP_URL } from '@/lib/constants';
 import { Instagram, Facebook, Twitter, ShieldCheck } from 'lucide-react';
+import { 
+  FaInstagram, 
+  FaFacebookF, 
+  FaXTwitter 
+} from "react-icons/fa6";
 import { footerSections } from '@/lib/data/footer-links';
 
 const Footer = () => {
@@ -32,16 +37,37 @@ const Footer = () => {
               </Link>
             </div>
             <div className="flex items-center gap-3 pt-2">
-              <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-muted-foreground hover:text-foreground">
-                <Instagram className="size-5" />
+              <Link
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="text-muted-foreground transition hover:text-foreground"
+              >
+                <FaInstagram className="h-5 w-5" />
               </Link>
-              <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-muted-foreground hover:text-foreground">
-                <Facebook className="size-5" />
+
+              <Link
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="text-muted-foreground transition hover:text-foreground"
+              >
+                <FaFacebookF className="h-5 w-5" />
               </Link>
-              <Link href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X" className="text-muted-foreground hover:text-foreground">
-                <Twitter className="size-5" />
+
+              <Link
+                href="https://x.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+                className="text-muted-foreground transition hover:text-foreground"
+              >
+                <FaXTwitter className="h-5 w-5" />
               </Link>
             </div>
+
             <div className="flex items-center gap-2 text-xs text-muted-foreground pt-2">
               <ShieldCheck className="size-4" /> SSL Güvenli Ödeme
             </div>

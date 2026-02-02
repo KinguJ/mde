@@ -8,6 +8,6 @@ export const WHATSAPP_NUMBER =
   process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '905330841488';
 export const PHONE = process.env.NEXT_PUBLIC_PHONE || '424 238 70 72';
 export const EMAIL = process.env.NEXT_PUBLIC_EMAIL || 'info@mdesigorta.com';
-export const ADDRESS = process.env.NEXT_PUBLIC_ADDRESS || 'İstanbul, Türkiye';
+export const ADDRESS = process.env.NEXT_PUBLIC_ADDRESS || 'Elazığ, Türkiye';
 
-export const WHATSAPP_URL = `https://wa.me/${(process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '905551234567').replace(/\D/g, '')}`;
+export const WHATSAPP_URL = `https://wa.me/${(process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '905330841488').replace(/\D/g, '')}`;

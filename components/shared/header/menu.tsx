@@ -34,9 +34,9 @@ const Menu = ({ showDesktopLinks = true, showMobileTrigger = true }: MenuProps) 
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start">
-              <DropdownMenuItem asChild>
+             {/* <DropdownMenuItem asChild>
                 <Link href="/urunlerimiz">Tüm Ürünler</Link>
-              </DropdownMenuItem>
+              </DropdownMenuItem>*/}
               {products.map((p) => (
                 <DropdownMenuItem key={p.slug} asChild>
                   <Link href={`/urunlerimiz/${p.slug}`}>{p.title}</Link>

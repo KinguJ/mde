@@ -37,7 +37,7 @@ export default function ContactPage() {
                   <span>{ADDRESS}</span>
                 </div>
               </div>
-              <div className="mt-6 flex flex-wrap gap-3">
+{/*          <div className="mt-6 flex flex-wrap gap-3">
                 <Button asChild className="cursor-pointer">
                   <a
                     href={WHATSAPP_URL}
@@ -55,12 +55,12 @@ export default function ContactPage() {
                     Hemen Ara
                   </a>
                 </Button>
-              </div>
+              </div>*/}
             </div>
           </div>
 
           <div className="rounded-xl border bg-card p-6 shadow-sm">
-            <h2 className="h3-bold mb-5">Teklif Talebi</h2>
+            <h2 className="h3-bold mb-5">İletişim</h2>
             <TeklifFormu
               productSlug="genel"
               productTitle="Genel Başvuru"

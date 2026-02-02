@@ -4,17 +4,32 @@ import Menu from './menu';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogTrigger } from '@/components/ui/dialog';
 import { MessageCircle, Phone, Search as SearchIcon } from 'lucide-react';
+import Image from 'next/image';
 
 const Header = () => {
   return (
     <header className="w-full border-b">
       <div className="wrapper flex-between py-2">
-        <Link
-          href="/"
-          className="inline-flex items-baseline font-black tracking-tight text-5xl text-primary hover:text-primary/90 transition-colors"
-        >
-          {APP_NAME.split(' ')[0]}
-        </Link>
+            <Link
+        href="/"
+        className="inline-flex items-center"
+      >
+        <Image
+          src="/lo.png" 
+          alt={APP_NAME}
+          width={60}   
+          height={30}   
+          className="object-contain h-19 w-19"
+        />
+      <span className="tracking-tight text-sm">
+        Mustafa 
+        <br />
+        Demirel 
+        <br />
+        Sigortacılık
+      </span>
+      </Link>
+
 
         <div className="hidden md:block">
           <Menu showDesktopLinks={true} showMobileTrigger={false} />

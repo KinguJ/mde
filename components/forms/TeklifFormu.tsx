@@ -190,7 +190,7 @@ export function TeklifFormu({
 
   return (
     <div className="w-full">
-      {/* Warning Banner */}
+      {/* Warning Banner 
       <div className="mb-5 rounded-lg bg-amber-50 border border-amber-200 p-3">
         <div className="flex items-start gap-2.5">
           <AlertTriangle className="h-4 w-4 text-amber-600 flex-shrink-0 mt-0.5" />
@@ -200,7 +200,7 @@ export function TeklifFormu({
             yanınızda bulundurunuz.
           </p>
         </div>
-      </div>
+      </div>*/}
 
       <form onSubmit={handleSubmit} className="space-y-5">
         {/* Mode Toggle */}

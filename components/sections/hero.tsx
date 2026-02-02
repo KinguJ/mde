@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Hero = () => {
   return (
     <section className="py-16">
-  <div className="wrapper grid items-center gap-10 lg:grid-cols-2">
+  <div className="wrapper grid items-center gap-10 lg:grid-cols-2 ">
     <div className="space-y-6">
       <h1 className="h1-bold">
         Araç, sağlık, konut ve iş sigortalarınız için hızlı, güvenilir ve şeffaf çözümler.
@@ -17,7 +17,7 @@ const Hero = () => {
         <li>• Hasar sürecinde adım adım yönlendirme</li>
       </ul>
 
-      <Button asChild size="lg">
+      <Button asChild size="lg" className='h-12 px-16 text-base bg-primary-foreground text-primary border-1 border-primary/50 hover:border-primary/75 hover:bg-accent/69'>
         <Link href="/iletisim">Teklif Al</Link>
       </Button>
     </div>

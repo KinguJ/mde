@@ -9,7 +9,7 @@ const HomePage = async () => {
     <div className="space-y-0">
       <Hero />
       <QuickProducts />
-      <Partners />
+      {/*<Partners />*/}
       <Testimonials />
       <FAQ />
     </div>
